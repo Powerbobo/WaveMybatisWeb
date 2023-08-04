@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> --%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 	<html>
 	<head>
@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<h1>회원정보 수정</h1>
-		<form action="/member/update.do" method="post">
+		<form action="/member/update.do1" method="post">
 		<fieldset>
 			<legend>회원 상세정보</legend>
 			<ul>
@@ -33,8 +33,8 @@
 				<li>
 					<label for="member-gender">성별</label>
 					<!-- 선택했던 radio 버튼 유지  -->
-<%-- 					 남<input type="radio" id="member-gender" name="member-gender" value="M" <c:if test="${ member.memberGender eq 'M' }">checked</c:if>> --%>
-<%-- 					 여<input type="radio" id="member-gender" name="member-gender" value="F" <c:if test="${ member.memberGender eq 'F' }">checked</c:if>> --%>
+					 남<input type="radio" id="member-gender" name="member-gender" value="M" <c:if test="${ member.memberGender eq 'M' }">checked</c:if>>
+					 여<input type="radio" id="member-gender" name="member-gender" value="F" <c:if test="${ member.memberGender eq 'F' }">checked</c:if>>
 				</li>
 				<li>
 					<label for="member-email">이메일</label>

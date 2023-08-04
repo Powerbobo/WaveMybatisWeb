@@ -44,4 +44,8 @@
 	<select id="seleteCheckLogin" resultMap="memberResultMap">
 		SELECT * FROM MEMBER_TBL WHERE MEMBER_ID = #{memberId } AND MEMBER_PW = #{memberPw }
 	</select>
+	
+	<select id="selectOneById" resultMap="memberResultMap">
+		SELECT * FROM MEMBER_TBL WHERE MEMBER_ID = #{memberId }
+	</select>
 </mapper>

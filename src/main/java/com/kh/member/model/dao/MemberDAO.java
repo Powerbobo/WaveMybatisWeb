@@ -26,4 +26,8 @@ public class MemberDAO {
 		Member mOne = session.selectOne("MemberMapper.seleteCheckLogin", member);
 		return mOne;
 	}
+	public Member selectOneById(SqlSession session, String memberId) {
+		Member member = session.selectOne("MemberMapper.selectOneById", memberId);
+		return member;
+	}
 }
